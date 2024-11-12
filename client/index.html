@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="content" description="" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="" />
+    <link rel="stylesheet" href="./css/chat.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <title>Chat 💯 ️️</title>
+  </head>
+
+  <body class="container">
+    <main class="wrapper" id="izrada">
+      <h1 class="title">Full chat app</h1>
+      <div class="image__wrapper">
+        <figure class="image__figure">
+          <img
+            class="chat-image"
+            width="260"
+            height="194"
+            src="./images/srbija-zastava.webp"
+            alt="zastava srbija"
+          />
+        </figure>
+      </div>
+      <p>Rule 1 - Example</p>
+      <p>Rule 2 - Example</p>
+      <p>Rule 3 - Example</p>
+
+      <form action="/chat.html" class="login_form" id="login_form">
+        <label class="login_label" for="name">Type your nick</label>
+
+        <input
+          class="login_input"
+          type="text"
+          minlength="3"
+          maxlength="15"
+          pattern="[a-zA-Z0-9_]*"
+          placeholder="only letters,numbers and underscore"
+          name="username"
+          id="name"
+          required
+          autocomplete="on"
+        />
+        <input
+          type="checkbox"
+          name="rules"
+          id="rules"
+          checked="true"
+          required
+        />
+        <label for="rules" class="login_label">I m over 14 years old</label>
+        <button class="login_button" type="submit">Join</button>
+      </form>
+
+      <p style="margin-bottom: 3rem">Thanks for visit.</p>
+    </main>
+  </body>
+</html>
