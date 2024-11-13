@@ -2,7 +2,7 @@ const { username } = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
 const publicMessages = document.querySelector("#messages");
-const socket = io("http://localhost:3000/");
+const socket = io("http://localhost:3000");
 
 const autoscroll = () => {
   publicMessages.scrollBy(0, 500);
@@ -84,7 +84,7 @@ socket.on("user left", ({ userLeft, time, users }) => {
   }
   const html = `<p class="public_message">${moment(time).format(
     "hh:mm"
-  )} - Admin: Korisnik ${userLeft} je napustio chat!</p>`;
+  )} - Admin: User ${userLeft} left the chat!</p>`;
 
   $("#messages").append(html);
 
